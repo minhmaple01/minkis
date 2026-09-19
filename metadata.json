@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix StoryForge Kids EN",
+  "description": "AI Screenplay generator for children\u0027s English storytelling videos with nested tag-based timing and pacing structure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

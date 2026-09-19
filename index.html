@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remix StoryForge Kids EN</title>
+    <meta name="description" content="AI Screenplay generator for children's English storytelling videos with nested tag-based timing and pacing structure." />
+    <meta property="og:title" content="Remix StoryForge Kids EN" />
+    <meta property="og:description" content="AI Screenplay generator for children's English storytelling videos with nested tag-based timing and pacing structure." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var currentFetch = window.fetch;
+          var desc = Object.getOwnPropertyDescriptor(window, 'fetch');
+          if (!desc || !desc.set) {
+            try {
+              Object.defineProperty(window, 'fetch', {
+                configurable: true,
+                enumerable: true,
+                get: function() {
+                  return currentFetch;
+                },
+                set: function(fn) {
+                  currentFetch = fn;
+                }
+              });
+            } catch (e1) {
+              try {
+                var proto = Object.getPrototypeOf(window);
+                if (proto) {
+                  Object.defineProperty(proto, 'fetch', {
+                    configurable: true,
+                    enumerable: true,
+                    get: function() {
+                      return currentFetch;
+                    },
+                    set: function(fn) {
+                      currentFetch = fn;
+                    }
+                  });
+                }
+              } catch (e2) {}
+            }
+          }
+        } catch (e) {}
+
+        window.addEventListener('error', function(event) {
+          if (event && event.message && event.message.indexOf('fetch of #<Window>') !== -1) {
+            event.preventDefault();
+          }
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
